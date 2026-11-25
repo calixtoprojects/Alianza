@@ -182,6 +182,22 @@
   .ai-block strong{font-size:13.5px;color:var(--ink-2);font-weight:600;display:block;margin-bottom:3px}
   .ai-block p{font-size:13px;color:var(--muted);line-height:1.5}
 
+  /* CRM SPECS */
+  .crm-specs{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;
+  }
+  .crm-spec{
+    background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.12);
+    border-radius:10px;padding:14px;text-align:center;
+  }
+  .crm-spec .spec-num{
+    font-size:clamp(22px,3vw,28px);font-weight:900;color:var(--warm);display:block;line-height:1;
+  }
+  .crm-spec .spec-label{
+    font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.04em;
+    text-transform:uppercase;margin-top:4px;display:block;
+  }
+
   /* GUARANTEE */
   .guarantee{
     display:flex;gap:16px;align-items:flex-start;
@@ -324,7 +340,7 @@
         <p class="desc">Todos os 7 serviços inclusos para os dois polos em um único investimento.</p>
 
         <div class="price-box">
-          <div class="amount">R$ 2.200</div>
+          <div class="amount">R$ 2.600</div>
           <div class="period">mensal · mínimo 3 meses</div>
         </div>
 
@@ -353,8 +369,23 @@
         <p class="desc">Sistema centralizado para gerenciar todos os leads e matrículas dos dois polos em um só lugar.</p>
 
         <div class="price-box">
-          <div class="amount">R$ 189</div>
+          <div class="amount">R$ 199</div>
           <div class="period">mensal</div>
+        </div>
+
+        <div class="crm-specs">
+          <div class="crm-spec">
+            <span class="spec-num">1</span>
+            <span class="spec-label">API</span>
+          </div>
+          <div class="crm-spec">
+            <span class="spec-num">3</span>
+            <span class="spec-label">WhatsApp</span>
+          </div>
+          <div class="crm-spec">
+            <span class="spec-num">5</span>
+            <span class="spec-label">Atendentes</span>
+          </div>
         </div>
 
         <hr class="price-divider">
